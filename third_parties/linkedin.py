@@ -1,10 +1,13 @@
 import os
 import requests
 
+
 def scrap_linkedin_profile(linkedin_profile_url: str):
     """Scrap information from LinkedIn profiles
     Manually scrape the information from the linkedin profile"""
-    response = requests.get(url="https://gist.githubusercontent.com/emarco177/0d6a3f93dd06634d95e46a2782ed7490/raw/fad4d7a87e3e934ad52ba2a968bad9eb45128665/eden-marco.json")
+    response = requests.get(
+        url="https://gist.githubusercontent.com/emarco177/0d6a3f93dd06634d95e46a2782ed7490/raw/fad4d7a87e3e934ad52ba2a968bad9eb45128665/eden-marco.json"
+    )
 
     data = response.json()
     data = {
